@@ -26,14 +26,13 @@ public class stack3 {
     }
 
     public void everse(int n){
-        int s=1;
+        
         if(n==0){
             return;
         }
         System.out.println(n--);
         everse(n);
-        s+=s;
-        System.out.println(s);
+        
 
         
     }
@@ -49,15 +48,15 @@ public class stack3 {
         s.push(2);
         s.push(3);
         obj.everse(10);
-        // obj.reverseStack(4,s);
-        // obj.printTillZero(10);
+        obj.reverseStack(4,s);
+        obj.printTillZero(10);
 
-        // while (!s.isEmpty()) {
+        while (!s.isEmpty()) {
 
-        //     System.out.println(s.peek());
-        //     s.pop();
+            System.out.println(s.peek());
+            s.pop();
             
-        // }
+        }
     }
 
 
